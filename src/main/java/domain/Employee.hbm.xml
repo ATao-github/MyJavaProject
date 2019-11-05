@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+        <class name="domain.Employee" table="employee">
+                <id name="eid" column="eid">
+                        <generator class="native"/>
+                </id>
+                <property name="name" column="ename" length="20"/>
+                <property name="sex" column="sex" length="10"/>
+                <property name="age" column="age"/>
+                <property name="joinTime" column="joinTime"/>
+                <property name="eno" column="eno" length="20"/>
+                <property name="username" column="username" length="20"/>
+                <property name="password" column="password" length="20"/>
+                <!-- column是employee表对应department表的外键名称 -->
+                <many-to-one name="department" class="domain.Department" column="dno" lazy="false"/>
+        </class>
+
+</hibernate-mapping>
