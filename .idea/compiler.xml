@@ -24,9 +24,17 @@
         <processorPath useClasspath="true" />
         <module name="kirin01" />
       </profile>
+      <profile default="false" name="Annotation profile for mybatis" enabled="true">
+        <sourceOutputDir name="..\kirin01\mybatis\target\generated-sources\annotations" />
+        <sourceTestOutputDir name="..\kirin01\mybatis\target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="mybatis" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="kirin01" target="1.6" />
+      <module name="mybatis" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

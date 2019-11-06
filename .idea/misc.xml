@@ -3,11 +3,15 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../mybatis" />
+  </component>
   <component name="IdProvider" IDEtalkID="231603106B8D09B89A130EB92B81BA28" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis/pom.xml" />
       </list>
     </option>
   </component>
